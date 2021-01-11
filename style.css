@@ -1,0 +1,262 @@
+*{margin:0; padding:0; box-sizing: border-box} 
+
+html{
+	scroll-behavior: smooth
+}
+
+/* scroll button */
+
+.scrollTop{
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	background: #343a40;
+	padding: 5px 10px;
+	border-radius: 7px;
+	font-size: 20px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+	z-index: 999;
+}
+
+
+
+
+/* modal */
+
+.modal{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	z-index: 111999;
+}
+.modal .box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: #fff;
+	padding: 20px;
+}
+.modal .box .modalHeader{
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.modal .box .modalHeader .close{
+	cursor: pointer
+}
+
+
+
+
+/* navbar */
+
+header{
+	position: relative;
+	transition: .8s
+}
+header.sticky{
+	width: 100%!important;
+	display: flex!important;
+	justify-content: center!important;
+}
+.navbar{
+    padding: 0 60px;	
+    transition: .8s;
+}
+.navbar.show{
+	position: fixed!important;
+	width: 95%;
+	padding: 5px 60px!important;
+    margin-top: 20px;
+    border-radius: 10px; 
+    display: flex!important;
+	justify-content: space-between!important;
+    z-index: 999;   
+}
+.home{
+   width: 100%;
+   height: 100vh;
+}
+.owl-carousel .item img{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+ .owl-carousel .item{
+	position: relative;
+}
+.owl-carousel .item::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+.home .owl-nav{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%,-50%);
+	color: #fff!important
+}
+.owl-prev{
+	position: absolute;
+	left: 1%;
+	font-size: 60px!important;
+	outline: none!important
+}
+.owl-next{
+	position: absolute;
+	right: 1%;
+	font-size: 60px!important;
+	outline: none!important
+}
+
+
+
+
+/* about section */
+.about, .services, .gallery, .contact, .findMe{
+	width: 100%;
+	height: auto;
+	margin: 100px 0;
+	padding-bottom: 100px;
+	/* border: 2px solid; */
+}
+.about .aboutHeading, .services .servicesHeading, 
+.gallery .galleryHeading, .contact .contactHeading, .findMe .findmeHeading
+{
+	padding: 100px 0;
+	position: relative
+}
+.about .aboutHeading::before, .services .servicesHeading::before,
+.gallery .galleryHeading::before, .contact .contactHeading::before,
+ .findMe .findmeHeading::before
+{
+	content: "";
+	position: absolute;
+	top: 158px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 2px;
+	background: #000!important;
+}
+.about .aboutHeading::after, .services .servicesHeading::after,
+.gallery .galleryHeading::after, .contact .contactHeading::after,
+ .findMe .findmeHeading::after
+{
+	content: "";
+	position: absolute;
+	top: 171px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 165px;
+    height: 2px;
+	background: #000!important;
+}
+.abtcontent img{
+    min-width: 100%;
+    height: 270px;
+}
+.abtcontent h2{
+   font-size: 40px;
+}
+
+
+
+
+/* service section */
+
+.services .card-img{
+	width: 130px;
+    height: 100%;
+}
+
+
+
+/* find me section */
+
+.findMe{
+	background-color: #c5f1ff;
+}
+.findMe .findLogo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+.findMe .fa{
+	font-size: 60px;
+}
+.findMe .count{
+	font-size: 20px;
+    font-weight: 700;
+}
+
+.gallery img{
+	width: 250px
+}
+.galleryimg{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media(min-width: 991px) and (max-width: 1200px){
+.servText{
+     font-size: 14px;
+     margin-left: 12px;
+	}
+}
+
+@media(max-width: 991px){
+.abtcontent .content{
+    font-size: 14px;
+   }
+}
+@media(max-width: 768px){
+.abtcontent .content{
+    margin-top: 30px
+   }
+.services .card-img{
+	width: 100%;
+    height: 100%;
+}
+.galleryContent img{
+   	margin-bottom: 30px
+   }
+.findMe .findLogo{
+    margin-bottom: 30px
+}
+.gallery img{
+	width: 100%
+}
+}
+
+@media(max-width: 500px){
+.modal .box{
+	font-size: 12px;
+	width: 200px
+	}
+}

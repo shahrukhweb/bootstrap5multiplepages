@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bs4multiplepages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- css link -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- owl carousel theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+  <!-- owl carousel css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+
+</head>
+<body>
+  
+  <!-- scroll top button -->
+
+  <div class="scrollTop">
+     <i class="fa fa-angle-up"></i>
+  </div>
+
+
+  <!-- modal -->
+
+  <div class="modal">
+    <div class="box">
+       <div class="modalHeader">
+         <h3>Welcome!</h3>
+         <span class="close">&times</span>
+       </div>
+       <hr>
+       <div class="modalBody">
+        <p clss="modalText">Hi! this is Shahrukh Shah. In this page you will see a simple but attractive website layout created using HTML, CSS, JS, JQuery and Bootstrap 5. HOPE YOU LIKE IT :)</p>
+       </div>
+    </div>
+  </div>
+
+
+  <!-- navbar -->
+
+  <header>
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Shahrukh</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>           
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+           </div>
+
+     </nav>
+      </header>
+      
+
+      <!-- homepage -->
+
+  <section class="home" id="home">
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="images/butterfly.jpg">
+        </div>
+        <div class="item">
+          <img src="images/city.jpg">
+        </div>
+        <div class="item">
+          <img src="images/desert.jpg">
+        </div>
+        <div class="item">
+          <img src="images/flower.jpg">
+        </div>
+        <div class="item">
+          <img src="images/flowers.jpg">
+        </div>
+        <div class="item">
+          <img src="images/night.jpg">
+        </div>         
+    </div>
+                
+  </section>
+
+
+   <!-- about section -->
+
+  <section class="about">
+      <h1 class="aboutHeading text-center">About Us</h1>
+       
+      <div class="container">
+        <div class="row abtcontent">
+
+               <div class="col-md-6 col-10 mx-auto">
+                 <img src="images/img1.jpg" class="img-fluid rounded" alt="abtImage">
+               </div>
+
+               <div class="col-md-6 col-10 mx-auto d-flex flex-column justify-content-center align-items-start content">
+                  <h2 class="display-3">My Journey</h2>
+                  <p class="my-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatem quod maxime id laborum sed ipsa, atque ab, facilis, voluptate animi velit vitae odit consequuntur corrupti earum ipsam aperiam facere excepturi obcaecati alias. Sapiente commodi explicabo, itaque, obcaecati consectetur sunt nostrum esse omnis libero molestias tempora illum porro quis velit.</p>
+                  <button class="btn btn-outline-primary">Check More</button>
+               </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- services section -->
+
+
+
+
+  <section class="services pb-0">
+      <h1 class="servicesHeading text-center">Our Services</h1>
+       
+      <div class="container">
+        <div class="row servContent">
+
+          <div class="col-lg-4 col-md-6 col-10 mx-auto mb-5">
+            <div class="card">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/img2.jpg" class="card-img" alt="service img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body servText">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-10 mx-auto mb-5">
+            <div class="card">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/img2.jpg" class="card-img" alt="service img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body servText">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-10 mx-auto mb-5">
+            <div class="card">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/img2.jpg" class="card-img" alt="service img">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body servText">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  </section>
+
+
+  
+  <!-- gallery section -->
+
+  <section class="gallery">
+      <h1 class="galleryHeading text-center">Our Gallery</h1>
+
+      <div class="container">
+       
+<!-- offset-lg-1 offset-md-0 offset-sm-0 offset-2 this can be donw beside row to center the row -->
+        <div class="row g-2">
+          <div class="col-md-4 col-10 mx-auto galleryimg"> 
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+
+
+  
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+        
+
+       
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-4 col-10 mx-auto galleryimg">
+             <img src="images/img3.jpg" class="img-fluid">
+          </div>
+        </div>
+
+      
+      </div>
+     
+  </section>
+
+  
+
+
+  <!-- find me section -->
+
+
+  <section class="findMe">
+    
+
+    <h1 class="findmeHeading text-center">Find me here</h1>
+    <div class="container">
+      <div class="row">
+         <div class="col-md-3 col-6 findLogo">
+          <a href=""><i class="fa fa-facebook-square" style="color:#3b5999;"></i></a>
+            <span class="count">500</span>
+         </div>
+         <div class="col-md-3 col-6 findLogo">
+          <i class="fa fa-github-alt" style="color:#4078c0"></i>
+            <span class="count">200</span>
+         </div>
+         <div class="col-md-3 col-6 findLogo">
+          <a href="https://www.instagram.com/avoid_error/"><i class="fa fa-instagram" style="color:#e4405f"></i></a>
+            <span class="count">750</span>
+         </div>
+         <div class="col-md-3 col-6 findLogo">
+          <i class="fa fa-twitter-square" style="color:#55acee"></i>
+            <span class="count">350</span>
+         </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+
+
+
+
+  <!-- contact section -->
+       
+  <section class="contact">
+    <h1 class="contactHeading text-center">Contact Us</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-8 mx-auto">
+
+           <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            
+            <label>Gender</label>
+            <div class="form-check form-check-inline" style="margin-left: 10px">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline mb-3">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Please upload your portfolio">
+              <span class="input-group-text" id="basic-addon2">Browse</span>
+            </div>
+
+            <label for="exampleDataList" class="form-label">Select City</label>
+              <input class="form-control mb-3" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+              <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+              </datalist>
+            
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Please Accept</label>
+            </div>
+
+            <button class="btn btn-primary btn-sm">Submit</button>
+
+        </div>  
+      </div>
+    </div>
+    
+  </section>
+
+
+  <footer class="bg-dark text-center">
+     <p class="text-white" style="margin-bottom: 0">&copy; Created by Shahrukh</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  
+  <!-- owl carousel js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+  <!-- counter up 2 (link from cdnjs)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+  <script src="main.js"></script>  
+  
+</body>
+</html>
